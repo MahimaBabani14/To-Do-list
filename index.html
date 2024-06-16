@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body> 
+    <div class="todo">
+       <h2>To-Do List <img src="icon.png" alt="img" ></h2>
+
+
+       <div class="row">
+          <input type="text" name="text" id="input-box" placeholder="Add Your Text"><button onclick="addTask()">Add Task</button>
+       </div>
+
+       
+       <ul id="list-container">
+        <!-- <li class="checked">Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li> -->
+       </ul>
+
+
+       <div class="select">
+        <div class="box">
+            <p>Completed: <span id="completed-count">  0</span></p><br> 
+            <p>Total Tasks:  <span id="incomplete-count">  0 </span></p>
+         </div>
+    
+        <select name="todos" class="filter-todo" >
+            <option value="all">All</option>
+            <option value="Completed">Completed</option>
+            <option value="Incomplete">Incompleted</option>
+        </select>
+        
+       </div>
+
+      
+      
+    </div>
+ 
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
